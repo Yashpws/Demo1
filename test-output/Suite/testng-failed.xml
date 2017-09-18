@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="path" value="G:\\Vikas- Shailesh - demo Framework\\chromedriver_win32 (3)\\chromedriver.exe"/>
+  <parameter name="driversyntax" value="webdriver.chrome.driver"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="Reporter.TestNGCustomReportListener"/>
+  </listeners>
+  <test name="Test-firefox(failed)">
+    <parameter name="path" value="G:\\Vikas- Shailesh - demo Framework\\Drivers\\geckodriver-v0.17.0-win64\\geckodriver.exe"/>
+    <parameter name="driversyntax" value="webdriver.gecko.driver"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestCases.TestCase_Booking_smoke">
+        <methods>
+          <include name="test_Search"/>
+          <include name="select_ProductName"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="finish"/>
+          <include name="finish"/>
+        </methods>
+      </class> <!-- TestCases.TestCase_Booking_smoke -->
+    </classes>
+  </test> <!-- Test-firefox(failed) -->
+  <test name="Test-chrome(failed)">
+    <parameter name="path" value="G:\\Vikas- Shailesh - demo Framework\\chromedriver_win32 (3)\\chromedriver.exe"/>
+    <parameter name="driversyntax" value="webdriver.chrome.driver"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.TestCase_Booking_smoke">
+        <methods>
+          <include name="test_Search"/>
+          <include name="select_ProductName"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="finish"/>
+          <include name="finish"/>
+        </methods>
+      </class> <!-- TestCases.TestCase_Booking_smoke -->
+    </classes>
+  </test> <!-- Test-chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
