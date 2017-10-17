@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/7</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 07 22:31:21 IST 2017</td>
+<td>Started on:</td><td>Wed Oct 11 21:23:33 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>96 seconds (96108 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44927 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.finish()'><b>finish</b><br>Test class: TestCases.TestCase_Booking_smoke</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+<td title='TestCases.TestCase_Booking_smoke.setup()'><b>setup</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: firefox, webdriver.gecko.driver, G:\Vikas- Shailesh - demo Framework\Drivers\geckodriver-v0.17.0-win64\geckodriver.exe</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: timeouts
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;YP1005009DT&apos;, ip: &apos;10.8.100.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;YP1005009DT&apos;, ip: &apos;10.8.100.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\NIKHIL~1.WAG\AppData\Local\Temp\rust_mozprofile.fevSPr4VRYtg, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=6832.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
+Capabilities [{moz:profile=C:\Users\nikhil.waghmare\AppData\Local\Temp\rust_mozprofile.MUWkk2MD5KNU, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=56.0, platformVersion=6.1, moz:processID=6556.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ae43c391-4bc6-4e13-918a-c40710da654f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -92,9 +92,8 @@ Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
-	at TestCases.TestCase_Booking_smoke.finish(TestCase_Booking_smoke.java:399)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:868)
+	at TestCases.TestCase_Booking_smoke.setup(TestCase_Booking_smoke.java:143)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -103,10 +102,8 @@ Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
@@ -119,13 +116,13 @@ Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace119112899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace119112899'><pre>org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+</pre></div><a href='#' onClick='toggleBox("stack-trace959629210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace959629210'><pre>org.openqa.selenium.WebDriverException: timeouts
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;YP1005009DT&apos;, ip: &apos;10.8.100.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;YP1005009DT&apos;, ip: &apos;10.8.100.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\NIKHIL~1.WAG\AppData\Local\Temp\rust_mozprofile.fevSPr4VRYtg, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=6832.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
+Capabilities [{moz:profile=C:\Users\nikhil.waghmare\AppData\Local\Temp\rust_mozprofile.MUWkk2MD5KNU, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=56.0, platformVersion=6.1, moz:processID=6556.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: ae43c391-4bc6-4e13-918a-c40710da654f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -136,9 +133,8 @@ Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
-	at TestCases.TestCase_Booking_smoke.finish(TestCase_Booking_smoke.java:399)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:868)
+	at TestCases.TestCase_Booking_smoke.setup(TestCase_Booking_smoke.java:143)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -147,10 +143,8 @@ Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
@@ -165,199 +159,62 @@ Session ID: d64c09a4-a5bc-4a3b-a757-3c1e7ee0314c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
 <td>0</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
+<td>null</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: King's cage, .//*[contains(text(),'Cage (Red Queen 3)')], King's Cage (Red Queen 3)<br/>
-<a href="#Output-1098986569" onClick='toggleBox("Output-1098986569", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1098986569" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1098986569">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
+<td title='TestCases.TestCase_Booking_smoke.finish()'><b>finish</b><br>Test class: TestCases.TestCase_Booking_smoke</td>
 <td></td>
-<td>1</td>
+<td>0</td>
+<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: King's cage, .//*[contains(text(),'Cage (Red Queen 3)')], King's Cage (Red Queen 3)</td>
+<td></td>
+<td>0</td>
 <td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: One Plus 5, .//*[contains(text(),'OnePlus 5 (Slate Gray 6GB RAM + 64GB memory)')], OnePlus 5 (Slate Gray<br/>
-<a href="#Output-276869158" onClick='toggleBox("Output-276869158", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-276869158" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-276869158">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
+<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: One Plus 5, .//*[contains(text(),'OnePlus 5 (Slate Gray 6GB RAM + 64GB memory)')], OnePlus 5 (Slate Gray</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: chess, .//*[contains(text(),'StonKraft 17')], StonKraft 17<br/>
-<a href="#Output-1527214863" onClick='toggleBox("Output-1527214863", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1527214863" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1527214863">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
+<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: chess, .//*[contains(text(),'StonKraft 17')], StonKraft 17</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: A Walk down, .//*[contains(text(),'A Walk Down to the lane')], A Walk Down to the lane<br/>
-<a href="#Output-172699023" onClick='toggleBox("Output-172699023", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-172699023" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-172699023">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
+<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: A Walk down, .//*[contains(text(),'A Walk Down to the lane')], A Walk Down to the lane</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: parkhe, .//*[contains(text(),'Agnihotra (The Vedic Solution')], Agnihotra (The Vedic Solution<br/>
-<a href="#Output-1831882653" onClick='toggleBox("Output-1831882653", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1831882653" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1831882653">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
+<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: parkhe, .//*[contains(text(),'Agnihotra (The Vedic Solution')], Agnihotra (The Vedic Solution</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: John Deere, .//*[contains(text(),'Bruder Toys John Deere Tractor 7930')], Tractor 7930<br/>
-<a href="#Output-1552400354" onClick='toggleBox("Output-1552400354", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1552400354" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1552400354">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
+<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: John Deere, .//*[contains(text(),'Bruder Toys John Deere Tractor 7930')], Tractor 7930</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
 <tr>
-<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: Yash, .//*[contains(text(),'Personalized Ceramic Mug for Yash')], meSleep Guitar Personalized Ceramic Mug for Yash<br/>
-<a href="#Output-1078566479" onClick='toggleBox("Output-1078566479", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1078566479" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1078566479">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
+<td title='TestCases.TestCase_Booking_smoke.select_ProductName()'><b>select_ProductName</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: Yash, .//*[contains(text(),'Personalized Ceramic Mug for Yash')], meSleep Guitar Personalized Ceramic Mug for Yash</td>
 <td></td>
-<td>1</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
-<tr>
-<td title='TestCases.TestCase_Booking_smoke.test_Search()'><b>test_Search</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: King's cage, .//*[contains(text(),'Cage (Red Queen 3)')], King's Cage (Red Queen 3)<br/>
-<a href="#Output-1218519094" onClick='toggleBox("Output-1218519094", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1218519094" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1218519094">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
-<tr>
-<td title='TestCases.TestCase_Booking_smoke.test_Search()'><b>test_Search</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: One Plus 5, .//*[contains(text(),'OnePlus 5 (Slate Gray 6GB RAM + 64GB memory)')], OnePlus 5 (Slate Gray<br/>
-<a href="#Output-847320212" onClick='toggleBox("Output-847320212", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-847320212" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-847320212">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
-<tr>
-<td title='TestCases.TestCase_Booking_smoke.test_Search()'><b>test_Search</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: chess, .//*[contains(text(),'StonKraft 17')], StonKraft 17<br/>
-<a href="#Output-1406848276" onClick='toggleBox("Output-1406848276", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1406848276" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1406848276">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-<tr id=null><td width=20%>3. Search for the product forchess for firefox</td><td width=20%>Verify the Search result for the productchess</td><td width=20%>chess</td><td width=20%>StonKraft 17</td><td width=20%>StonKraft 17'' x 17'' Tournament Chess Vinyl Foldable Chess Game With Solid Plastic Pieces (With Extra Queen) - Ideal for Professional Chess Players</td><TD align=center BGCOLOR= #00ff00 > Pass</tr><br/>
-</table><br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
-<tr>
-<td title='TestCases.TestCase_Booking_smoke.test_Search()'><b>test_Search</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: A Walk down, .//*[contains(text(),'A Walk Down to the lane')], A Walk Down to the lane<br/>
-<a href="#Output-1476235721" onClick='toggleBox("Output-1476235721", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1476235721" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1476235721">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-<tr id=null><td width=20%>4. Search for the product forA Walk down for firefox</td><td width=20%>Verify the Search result for the productA Walk down</td><td width=20%>A Walk down</td><td width=20%>A Walk Down to the lane</td><td width=20%>A Walk Down to the lane</td><TD align=center BGCOLOR= #00ff00 > Pass</tr><br/>
-</table><br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
-<tr>
-<td title='TestCases.TestCase_Booking_smoke.test_Search()'><b>test_Search</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: parkhe, .//*[contains(text(),'Agnihotra (The Vedic Solution')], Agnihotra (The Vedic Solution<br/>
-<a href="#Output-50072771" onClick='toggleBox("Output-50072771", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-50072771" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-50072771">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
-<tr>
-<td title='TestCases.TestCase_Booking_smoke.test_Search()'><b>test_Search</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: John Deere, .//*[contains(text(),'Bruder Toys John Deere Tractor 7930')], Tractor 7930<br/>
-<a href="#Output-26928827" onClick='toggleBox("Output-26928827", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-26928827" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-26928827">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-<tr id=null><td width=20%>6. Search for the product forJohn Deere for firefox</td><td width=20%>Verify the Search result for the productJohn Deere</td><td width=20%>John Deere</td><td width=20%>Tractor 7930</td><td width=20%>Bruder Toys John Deere Tractor 7930 with Twin Tyres</td><TD align=center BGCOLOR= #00ff00 > Pass</tr><br/>
-</table><br/>
-</div>
-</td>
-<td></td>
-<td>19</td>
-<td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
-<tr>
-<td title='TestCases.TestCase_Booking_smoke.test_Search()'><b>test_Search</b><br>Test class: TestCases.TestCase_Booking_smoke<br>Parameters: Yash, .//*[contains(text(),'Personalized Ceramic Mug for Yash')], meSleep Guitar Personalized Ceramic Mug for Yash<br/>
-<a href="#Output-997695567" onClick='toggleBox("Output-997695567", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-997695567" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-997695567">
-<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr><br/>
-</table><br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
+<td>0</td>
 <td>TestCases.TestCase_Booking_smoke@6e0e048a</td></tr>
 </table><p>
 </body>
